@@ -1,11 +1,12 @@
 package org.example
 
 fun main() {
+    val partOfTime = 60
     val seconds = 6460
-    val minutes = seconds / 60
-    val secondsInTime = seconds % 60
-    val hours = minutes / 60
-    val minutesInTime = minutes / 60
+    val minutes = seconds / partOfTime
+    val secondsInTime = seconds % partOfTime
+    val hours = minutes / partOfTime
+    val minutesInTime = minutes / partOfTime
 
-    println("${String.format("%02d", hours)}:${String.format("%02d", minutesInTime)}:${String.format("%02d", secondsInTime)}")
+    println("%02d:%02d:%02d".format(hours, minutesInTime, secondsInTime))
 }
