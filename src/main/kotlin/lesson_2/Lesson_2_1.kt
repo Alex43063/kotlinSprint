@@ -5,9 +5,9 @@ fun main() {
     val studentMark2 = 4
     val studentMark3 = 3
     val studentMark4 = 5
-    val countOfStudents = 4f
+    val countOfStudents = 4
 
-    val avgMark = (studentMark1 + studentMark2 + studentMark3 + studentMark4) / countOfStudents
+    val avgMark = (studentMark1 + studentMark2 + studentMark3 + studentMark4).toFloat() / countOfStudents
 
     println(String.format("%.2f", avgMark))
 }
