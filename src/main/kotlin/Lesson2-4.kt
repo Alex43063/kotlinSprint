@@ -16,8 +16,8 @@ package org.example
 fun main() {
     val crystal = 7
     val iron = 11
-    val buff = 0.2
+    val buff = 20
 
-    println("Buff crystal = ${(crystal * buff).toInt()}")
-    println("Buff iron = ${(iron * buff).toInt()}")
+    println("Buff crystal = ${(crystal * (buff.toFloat()/100)).toInt()}")
+    println("Buff iron = ${(iron * (buff.toFloat()/100)).toInt()}")
 }
