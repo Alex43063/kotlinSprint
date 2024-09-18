@@ -10,24 +10,21 @@ package org.example
  – Выведи результат в консоль.
  */
 
+const val PART_OF_TIME: Int = 60
+const val HOURS_OF_DAY: Int = 24
+
 fun main() {
     val departureHour = 9
     val departureMinute = 39
     val travelTimeInMinutes = 457
 
-    val partOfTime = 60
-    val hoursInDay = 24
-    val departureTimeInMinutes = departureHour * partOfTime + departureMinute
+    val departureTimeInMinutes = departureHour * PART_OF_TIME + departureMinute
     val arrivalTimeInMinutes = departureTimeInMinutes + travelTimeInMinutes
 
-    val arrivalHours = arrivalTimeInMinutes / partOfTime
-    val arrivalMinutes = arrivalTimeInMinutes % partOfTime
-
-    val tryArrivalHours: Int = if (arrivalHours >= hoursInDay) {
-        arrivalHours - hoursInDay
-    } else {
-        arrivalHours
-    }
+    val arrivalHours = arrivalTimeInMinutes / PART_OF_TIME
+    val arrivalDay = (arrivalTimeInMinutes / PART_OF_TIME) / HOURS_OF_DAY
+    val arrivalMinutes = arrivalTimeInMinutes % PART_OF_TIME
+    val tryArrivalHours = arrivalHours - arrivalDay * HOURS_OF_DAY
 
     print("%02d:%02d".format(tryArrivalHours, arrivalMinutes))
 }
