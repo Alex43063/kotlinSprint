@@ -1,4 +1,4 @@
-package org.example
+package org.example.lesson_2
 
 /*
 Задача 4 к Уроку 2
@@ -19,6 +19,6 @@ fun main() {
     val iron = 11
     val buff = 20
 
-    println("Buff crystal = ${(crystal * (buff/FULL_PERCENT)).toInt()}")
-    println("Buff iron = ${(iron * (buff/FULL_PERCENT)).toInt()}")
+    println("Buff crystal = ${(crystal * (buff / FULL_PERCENT)).toInt()}")
+    println("Buff iron = ${(iron * (buff / FULL_PERCENT)).toInt()}")
 }

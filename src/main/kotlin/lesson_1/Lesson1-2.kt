@@ -1,4 +1,4 @@
-package org.example
+package org.example.lesson_1
 
 var countOfOrders: Int = 75
 val purchaseThanking: String = "Thank you for your purchase"

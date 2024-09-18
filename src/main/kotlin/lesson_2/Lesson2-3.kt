@@ -1,4 +1,4 @@
-package org.example
+package org.example.lesson_2
 
 /*
 Сайт с расписанием поездов получает данные с сервера.

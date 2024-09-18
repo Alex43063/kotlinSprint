@@ -1,4 +1,4 @@
-package org.example
+package org.example.lesson_2
 
 /*
     Задача 2 к Уроку 2
