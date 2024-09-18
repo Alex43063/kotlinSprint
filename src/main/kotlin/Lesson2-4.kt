@@ -13,11 +13,12 @@ package org.example
 Если получается нецелое число, то дробная часть должна отбрасываться.
  */
 
+const val FULL_PERCENT = 100.0
 fun main() {
     val crystal = 7
     val iron = 11
     val buff = 20
 
-    println("Buff crystal = ${(crystal * (buff.toFloat()/100)).toInt()}")
-    println("Buff iron = ${(iron * (buff.toFloat()/100)).toInt()}")
+    println("Buff crystal = ${(crystal * (buff/FULL_PERCENT)).toInt()}")
+    println("Buff iron = ${(iron * (buff/FULL_PERCENT)).toInt()}")
 }
