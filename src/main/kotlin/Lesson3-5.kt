@@ -12,10 +12,10 @@
 
 fun main() {
     val infoAboutStepString = "D2-D4;0"
-    val infoAboutStepList = infoAboutStepString.split(";")
-    val startPosition = infoAboutStepList[0].split("-")[0]
-    val finishPosition = infoAboutStepList[0].split("-")[1]
-    val numberOfStep = infoAboutStepList[1]
+    val infoAboutStepList = infoAboutStepString.split("-", ";")
+    val startPosition = infoAboutStepList[0]
+    val finishPosition = infoAboutStepList[1]
+    val numberOfStep = infoAboutStepList[2]
 
     println(startPosition)
     println(finishPosition)
