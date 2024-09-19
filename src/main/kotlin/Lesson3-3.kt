@@ -15,9 +15,17 @@
  */
 
 fun main() {
-    val numForMultiplication = 4
+    val numForMultiplication = 6
 
-    for (i in 1..9) {
-        println("$numForMultiplication x $i = ${numForMultiplication * i}")
-    }
+    print("""
+        $numForMultiplication x 1 = ${numForMultiplication * 1}
+        $numForMultiplication x 2 = ${numForMultiplication * 2}
+        $numForMultiplication x 3 = ${numForMultiplication * 3}
+        $numForMultiplication x 4 = ${numForMultiplication * 4}
+        $numForMultiplication x 5 = ${numForMultiplication * 5}
+        $numForMultiplication x 6 = ${numForMultiplication * 6}
+        $numForMultiplication x 7 = ${numForMultiplication * 7}
+        $numForMultiplication x 8 = ${numForMultiplication * 8}
+        $numForMultiplication x 9 = ${numForMultiplication * 9}
+    """.trimIndent())
 }
