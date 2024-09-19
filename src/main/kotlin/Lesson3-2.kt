@@ -10,14 +10,14 @@
  */
 
 fun main() {
-    val lastName: String = "Андреева"
+    var lastName: String = "Андреева"
     val firstName: String = "Татьяна"
     val midlName: String = "Сергеевна"
-    val girlLastName: String = "Сидорова"
+    var age: Int = 20
 
-    val ageBeforeMarried: Int = 20
-    val ageAfterMarried: Int = 22
+    println("$lastName $firstName $midlName, $age")
 
-    println("$lastName $firstName $midlName, $ageBeforeMarried")
-    println("$girlLastName $firstName $midlName, $ageAfterMarried")
+    age = 22
+    lastName = "Сидорова"
+    println("$lastName $firstName $midlName, $age")
 }
