@@ -1,10 +1,6 @@
 fun main() {
     val numTrainingDay = 6
-    val isEvenTrainingDay = if ((numTrainingDay % 2) == 0) {
-        true
-    } else {
-        false
-    }
+    val isEvenTrainingDay = (numTrainingDay % 2) == 0
     println(
         """
         Упражнения для рук: ${!isEvenTrainingDay}
