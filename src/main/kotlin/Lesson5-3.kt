@@ -17,4 +17,7 @@ fun main() {
     )
         println("Вы выиграли утешительный приз!")
     else println("Неудача!")
+
+    println("Правильные числа: $FIRST_LUCKY_NUMBER и $SECOND_LUCKY_NUMBER")
 }
+
