@@ -15,10 +15,10 @@ fun main() {
     if (numFoodBox != null) {
         println(
             "${
-                ((isBroken) && (numOfSeamen in GOOD_CONDITION_SEAMAN_MIN..GOOD_CONDITION_SEAMAN_MAX)
-                        && (numFoodBox > GOOD_CONDITION_FOOD_BOX)) ||
-                        ((isBroken) && (numOfSeamen == GOOD_CONDITION_SEAMAN_MAX)
-                                && (isGoodWeather) && (numFoodBox >= GOOD_CONDITION_FOOD_BOX))
+                ((isBroken) && (numOfSeamen in GOOD_CONDITION_SEAMAN_MIN..GOOD_CONDITION_SEAMAN_MAX) &&
+                        (numFoodBox > GOOD_CONDITION_FOOD_BOX)) ||
+                        ((isBroken) && (numOfSeamen == GOOD_CONDITION_SEAMAN_MAX) &&
+                                (isGoodWeather) && (numFoodBox >= GOOD_CONDITION_FOOD_BOX))
             }"
         )
     }
