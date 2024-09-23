@@ -1,10 +1,8 @@
 package lesson_5
 
-import kotlin.random.Random
-
 fun main() {
-    val firstNumber = Random.nextInt(0, 100)
-    val secondNumber = Random.nextInt(0, 100)
+    val firstNumber = (0..100).random()
+    val secondNumber = (0..100).random()
 
     println("Введите, сумму для $firstNumber и $secondNumber")
     val answer = readln().toInt()
