@@ -1,7 +1,5 @@
-import kotlin.random.Random
-
 fun main() {
-    val listOfLuckyNumbers = listOf(Random.nextInt(43), Random.nextInt(43), Random.nextInt(43))
+    val listOfLuckyNumbers = listOf((0..42).random(), (0..42).random(), (0..42).random())
     val listWithUserNumbers: MutableList<Int> = mutableListOf()
 
     println("Введите три числа")
